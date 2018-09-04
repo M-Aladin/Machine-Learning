@@ -1,2 +1,2 @@
 # Machine_Learning
-  Machine_Learnin
+This repo contains various projects on Machine Learning
