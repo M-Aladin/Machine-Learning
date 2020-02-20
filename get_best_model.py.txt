@@ -1,0 +1,9 @@
+scores_cv = []
+def get_best_model(highest_score):
+    for i in range(len(highest_scores)):
+        scores_cv.append(np.abs(highest_scores[i]['score']-highest_scores[i]['Validation_score']))
+    best_model = highest_scores[np.argmin(scores_cv)]['model']
+        
+    return best_model
+
+bestmodel = get_best_model(highest_scores)
